@@ -9,7 +9,7 @@
 
 * [5. AsyncIO](c5.md)
 
-* [**6. Memory **](c6.md)
+* [6. Memory](c6.md)
 
 * [**7. HttpServer **](c7.md)
 
