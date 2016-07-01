@@ -5,15 +5,13 @@
 
 * [**3. Client **](c3.md)
 
-* [**4. Server **](c4.md)
+* [**4. Process **](c5.md)
 
-* [**5. Process **](c5.md)
+* [**5. AsyncIO **](c6.md)
 
-* [**6. AsyncIO **](c6.md)
+* [**6. Memory **](c7.md)
 
-* [**7. Memory **](c7.md)
-
-* [**8. HttpServer **](c8.md)
+* [**7. HttpServer **](c8.md)
 
 * [**9. WebSocket **](c9.md)
 
