@@ -1,10 +1,12 @@
 # Summary
 * [1. 入门指引](Guide.md)
   * [1.1 安装指引](install.md)
-  * [1.2 内核调试优化](linuxparam.md)
-  * [1.3 通讯协议的设计](protocol.md)
-  * [1.4 系统架构](architecture.md)
-  * [1.5 版权声明](copyright.md)
+  * [1.2 内核优化](linuxparam.md)
+  * [1.3 通讯协议](protocol.md)
+  * [1.4 功能简介](function.md)
+  * 
+  * [1.6 系统架构](architecture.md)
+  * [1.7 版权声明](copyright.md)
 * [2. Server](c2.md)
 
 * [3. Client](c3.md)
