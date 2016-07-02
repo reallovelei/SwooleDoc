@@ -1,6 +1,6 @@
 # Summary
 * [1. 入门指引](Guide.md)
-  * [1.1 安装指引](install.md)
+  * [1.1 编译安装](install.md)
   * [1.2 内核优化](linuxparam.md)
   * [1.3 通讯协议](protocol.md)
   * [1.4 功能简介](function.md)
