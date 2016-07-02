@@ -1,7 +1,7 @@
 # Summary
 * [1. 入门指引](c1.md)
 	* [1.1 安装指引](Install.md)
-	* 
+	* [1.2 系统环境优化](SystemOptimize.md) 
 * [2. Server](c2.md)
 
 * [3. Client](c3.md)
