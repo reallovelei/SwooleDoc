@@ -42,8 +42,11 @@
     * [1.4.5 UnixSocket](ProtocolUnixSocket.md)
   * [1.6 系统架构](Architecture.md)
   * [1.7 版权声明](CopyRight.md)
-  * [1.8 开发人员](developer.md)
-  * [1.9 社区管理人员](contributor.md)
+  * [1.8 社区介绍](Community.md)
+    * [1.8.1 核心开发人员](contributor.md)
+    * [1.8.2 社区管理人员](contributor.md)
+  * [1.9 周边开源项目](RelationOpenSource.md)
+  
 * [2. Server](c2.md)
 
 * [3. Client](c3.md)
