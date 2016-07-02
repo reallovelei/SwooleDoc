@@ -6,6 +6,8 @@
       * [1.1.1.2 多进程方式协程](CoroutineProcess.md)
     * [1.1.2 多进程管理](ProcessManage.md)
       * [1.1.2.1 进程创建及监控](ProcessCreateMonitor.md)
+      * [1.1.2.2 进程间的通讯](ProcessCommunicate.md)
+      * [1.1.2.3 进程间的数据共享](ProcessDataShare.md)
     * [1.1.3 跨进程间通讯](RPC.md)
     * [1.1.5 异步数据驱动]()
   * [1.2 扩展编译安装](CompireInstall.md)
