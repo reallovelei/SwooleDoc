@@ -2,7 +2,7 @@
 * [1. 入门指引](Guide.md)
   * [1.1 安装指引](install.md)
   * [1.2 内核调试优化](linuxparam.md)
-  * [1.3 协议的设计](protocol.md)
+  * [1.3 通讯协议的设计](protocol.md)
   * [1.4 系统架构](architecture.md)
   * [1.5 版权声明](copyright.md)
 * [2. Server](c2.md)
