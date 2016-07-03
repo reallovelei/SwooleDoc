@@ -1,6 +1,6 @@
 # 8. WebSocket
 
-swoole_websocket_server 继承自 swoole_http_server,所以websocket_server 不仅拥有http_server的回调函数[onRequest](c7.md)。还有 onHandShake[可选] onOpen onMessage 等回调函数，下面一一来介绍。。当然，websocket_server也可以当Http服务器来用。
+swoole_websocket_server 继承自 swoole_http_server,所以websocket_server 不仅拥有http_server的回调函数[onRequest](c7.md)。还有 onHandShake[可选] [onOpen](#onOpen) [onMessage](#onMessage) 等回调函数，下面一一来介绍。。当然，websocket_server也可以当Http服务器来用。
 ```php
 $server = new swoole_websocket_server("0.0.0.0", 9501);
 
@@ -23,6 +23,11 @@ $server->start();
 
 ## onOpen
 当有新的WebSocket客户端与本服务建立连接并完成握手后会回调此函数。如果在onConnect里有代码，会先执行onConnect会滴啊函数。
+```php
+function onOpen(swoole_websocket_server $server, swoole_http_request $request);
+```
+
+
 
 ## onMessage
 
