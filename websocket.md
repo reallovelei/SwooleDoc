@@ -66,9 +66,10 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 
 | 属性名 | 描述 |
 | -- | -- |
-| $frame->fd | 客户端的socket id,要推给那个客户端就靠它了。 |
-| $frame->data | 数据内容，可以是文本内容也可以是二进制数据，可以通过opcode的值来判断 |
-
+| fd | 客户端的socket id,要推给那个客户端就靠它了。 |
+| data | 数据内容，可以是文本内容也可以是二进制数据，可以通过opcode的值来判断 |
+| opcode |  |
+| finish |  |
 
 
 
