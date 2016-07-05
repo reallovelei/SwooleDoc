@@ -21,6 +21,11 @@ $server->start();
 ```
 短短十来行代码就可以实现一个高性能的websocket server。
 
+
+
+---
+
+
 ## onOpen
 
 函数原型：
@@ -42,7 +47,7 @@ function onOpen(swoole_websocket_server $server, swoole_http_request $request);
 > 如果在onConnect里有代码，会先执行onConnect里的代码。
 
 
-
+---
 
 
 ## onMessage
@@ -63,7 +68,7 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 * onMessage回调**必须**被设置，未设置服务器将无法启动
 。
 
----
+
 
 #### swoole_websocket_frame
 
@@ -80,11 +85,14 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 <font color=red>> $data 如果是文本类型，编码格式必然是UTF-8，这是WebSocket协议规定的</font>
 
 
----
 
 #### opcode与数据类型
 * WEBSOCKET_OPCODE_TEXT = 0x1 ，文本数据
 * WEBSOCKET_OPCODE_BINARY = 0x2 ，二进制数据
+
+
+
+---
 
 
 
