@@ -39,7 +39,7 @@ function onHandShake(swoole_http_request $request, swoole_http_response $respons
 * 。
 * onHandShake 事件回调是可选的。
 
-> 如果设置onHandShake回调函数后不会再触发onOpen事件，需要应用代码自行处理
+> 如果设置onHandShake回调函数后将不会再触发onOpen事件，需要应用代码自行处理
 
 
 ---
