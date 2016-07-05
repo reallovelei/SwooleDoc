@@ -25,12 +25,12 @@ $server->start();
 
 函数原型：
 ```php
-function onOpen(swoole_websocket_server $server, swoole_http_request $request);
+function onHandShake(swoole_http_request $request, swoole_http_response $response);
 ```
 
 | 参数 | 描述 |
 | -- | -- |
-| $server | swoole_websocket_server对象 |
+| $request | swoole_websocket_server对象 |
 | $request | 是一个Http请求对象，包含了客户端发来的握手请求信息 |
 
 说明：
