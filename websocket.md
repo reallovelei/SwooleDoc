@@ -59,8 +59,9 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 
 说明：
 
-* 当服务器收到来自客户端的数据帧时会回调此函数。。
-* onOpen事件函数中可以调用push向客户端发送数据或者调用close关闭连接。
+* 当服务器收到来自客户端的数据帧时会回调此函数。
+* onMessage回调**必须**被设置，未设置服务器将无法启动
+。
 * onOpen事件回调是可选的。
 
 
