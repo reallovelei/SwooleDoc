@@ -19,21 +19,28 @@ $server->on('close', function ($ser, $fd) {
 
 $server->start();
 ```
-短短十来行代码就可以实现简单的websocket server。
-
-## onOpen
-当有新的WebSocket客户端与本服务建立连接并完成握手后会回调此函数。
->
-如果在onConnect里有代码，会先执行onConnect会滴啊函数。
-```php
-function onOpen(swoole_websocket_server $server, swoole_http_request $request);
-```
-
-
-
-## onMessage
-
-
+-短短十来行代码就可以实现一个高性能的websocket server。
+-
+-## onHandShake
+-
+-函数原型：
+-```php
+-function onHandShake(swoole_http_request $request, swoole_http_response $response);
+-```
+-
+-| 参数 | 描述 |
+-| -- | -- |
+-| $request | swoole_websocket_server对象 |
+-| $response | 是一个Http请求对象，包含了客户端发来的握手请求信息 |
+-
+-说明：
+-
+-* WebSocket建立连接后进行握手。WebSocket服务器已经内置了handshake，如果用户希望自己进行握手处理，可以设置onHandShake事件回
+调函数。
+-* onHandShake函数必须返回true表示握手成功，返回其他值表示握手失败
+-* onHandShake 事件回调是可选的。
+-
+-<font color=red> 如果设置onHandShake回调函数后将不会再触发onOpen事件，需要应用代码自行处理，（1.8.1或更高版本可以使用server->defer调用onOpen逻辑）。</font>
 
 
 
