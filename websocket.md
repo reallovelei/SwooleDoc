@@ -77,7 +77,7 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 | finish | 表示数据帧是否完整，一个WebSocket请求可能会分成多个数据帧进行发送 |
 
 最常用的应该就是 $frame->fd 和 $frame->data。
-> $data 如果是文本类型，编码格式必然是UTF-8，这是WebSocket协议规定的
+<font color=red>> $data 如果是文本类型，编码格式必然是UTF-8，这是WebSocket协议规定的</font>
 
 
 
