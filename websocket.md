@@ -63,6 +63,7 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 #### swoole_websocket_frame
 
 这个对象共有4个属性，分别是
+
 | 属性名 | 描述 |
 | -- | -- |
 | $frame->fd | 客户端的socket id,要推给那个客户端就靠它了。 |
