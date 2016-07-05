@@ -55,7 +55,7 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 | 参数 | 描述 |
 | -- | -- |
 | $server | swoole_websocket_server对象 |
-| $request | 是一个Http请求对象，包含了客户端发来的握手请求信息 |
+| $frame | 是swoole_websocket_frame对象，包含了客户端发来的数据帧信息 |
 
 说明：
 
