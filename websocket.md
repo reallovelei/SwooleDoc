@@ -39,7 +39,7 @@ function onHandShake(swoole_http_request $request, swoole_http_response $respons
 * onHandShake函数必须返回true表示握手成功，返回其他值表示握手失败
 * onHandShake 事件回调是可选的。
 
-> 如果设置onHandShake回调函数后将不会再触发onOpen事件，需要应用代码自行处理，（1.8.1或更高版本可以使用server->defer调用onOpen逻辑）。
+> 如果设置onHandShake回调函数后将不会再触发onOpen事件，需要应用代码自行处理，（1.8.1或更高版本可以使用server->defer调用onOpen逻辑）。</font>
 
 
 ---
