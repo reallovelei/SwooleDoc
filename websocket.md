@@ -28,6 +28,7 @@ $server->start();
 
 
 如果在onConnect里有代码，会先执行onConnect会滴啊函数。
+函数原型：
 ```php
 function onOpen(swoole_websocket_server $server, swoole_http_request $request);
 ```
