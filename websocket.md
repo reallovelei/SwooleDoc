@@ -31,6 +31,7 @@ $server->start();
 ```php
 function onOpen(swoole_websocket_server $server, swoole_http_request $request);
 ```
+
 | 参数 | 描述 |
 | -- | -- |
 | $server | swoole_websocket_server对象 |
