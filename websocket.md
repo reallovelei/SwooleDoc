@@ -34,8 +34,9 @@ function onOpen(swoole_websocket_server $server, swoole_http_request $request);
 | $request | 是一个Http请求对象，包含了客户端发来的握手请求信息 |
 
 说明：当有新的WebSocket客户端与本服务建立连接并完成握手后会回调此函数。
+onOpen事件函数中可以调用push向客户端发送数据或者调用close关闭连接。
 
-> 如果在onConnect里有代码，会先执行onConnect会滴啊函数。
+> 如果在onConnect里有代码，会先执行onConnect里的代码。
 
 
 
