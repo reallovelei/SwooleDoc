@@ -23,11 +23,18 @@ $server->start();
 
 ## onOpen
 当有新的WebSocket客户端与本服务建立连接并完成握手后会回调此函数。
->
+
+> 
+
+
 如果在onConnect里有代码，会先执行onConnect会滴啊函数。
 ```php
 function onOpen(swoole_websocket_server $server, swoole_http_request $request);
 ```
+| 参数 | 描述 |
+| -- | -- |
+| $server | swoole_websocket_server对象 |
+| $request | 是一个Http请求对象，包含了客户端发来的握手请求信息 |
 
 
 
