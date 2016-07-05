@@ -57,6 +57,11 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 | $server | swoole_websocket_server对象 |
 | $frame | 是swoole_websocket_frame对象，包含了客户端发来的数据帧信息 |
 
+说明：
+
+* 当服务器收到来自客户端的数据帧时会回调此函数。
+* onMessage回调**必须**被设置，未设置服务器将无法启动
+。
 
 ---
 
@@ -74,11 +79,6 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 最常用的应该就是 $frame->fd 和 $frame->data。
 
 
-说明：
-
-* 当服务器收到来自客户端的数据帧时会回调此函数。
-* onMessage回调**必须**被设置，未设置服务器将无法启动
-。
 
 
 
