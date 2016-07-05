@@ -36,7 +36,7 @@ function onHandShake(swoole_http_request $request, swoole_http_response $respons
 说明：
 
 * WebSocket建立连接后进行握手。WebSocket服务器已经内置了handshake，如果用户希望自己进行握手处理，可以设置onHandShake事件回调函数。
-* 。
+* onHandShake函数必须返回true表示握手成功，返回其他值表示握手失败
 * onHandShake 事件回调是可选的。
 
 > 如果设置onHandShake回调函数后将不会再触发onOpen事件，需要应用代码自行处理
