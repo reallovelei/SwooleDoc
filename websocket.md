@@ -59,7 +59,7 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 
 说明：
 
-* 当有新的WebSocket客户端与本服务建立连接并完成握手后会回调此函数。
+* 当服务器收到来自客户端的数据帧时会回调此函数。。
 * onOpen事件函数中可以调用push向客户端发送数据或者调用close关闭连接。
 * onOpen事件回调是可选的。
 
