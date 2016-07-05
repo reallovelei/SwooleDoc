@@ -49,7 +49,7 @@ function onOpen(swoole_websocket_server $server, swoole_http_request $request);
 
 函数原型：
 ```php
-function onOpen(swoole_websocket_server $server, swoole_http_request $request);
+function onMessage(swoole_server $server, swoole_websocket_frame $frame)
 ```
 
 | 参数 | 描述 |
