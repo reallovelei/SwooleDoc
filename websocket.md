@@ -68,8 +68,8 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 | -- | -- |
 | fd | 客户端的socket id,要推给那个客户端就靠它了。 |
 | data | 数据内容，可以是文本内容也可以是二进制数据，可以通过opcode的值来判断 |
-| opcode |  |
-| finish |  |
+| opcode | WebSocket的OpCode类型， |
+| finish | 表示数据帧是否完整，一个WebSocket请求可能会分成多个数据帧进行发送 |
 
 
 
