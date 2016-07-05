@@ -19,7 +19,7 @@ $server->on('close', function ($ser, $fd) {
 
 $server->start();
 ```
-短短十来行代码就可以实现简单的websocket server。
+短短十来行代码就可以实现一个高性能的websocket server。
 
 ## onOpen
 
@@ -34,9 +34,11 @@ function onOpen(swoole_websocket_server $server, swoole_http_request $request);
 | $request | 是一个Http请求对象，包含了客户端发来的握手请求信息 |
 
 说明：当有新的WebSocket客户端与本服务建立连接并完成握手后会回调此函数。
-> 
 
-如果在onConnect里有代码，会先执行onConnect会滴啊函数。
+> 如果在onConnect里有代码，会先执行onConnect会滴啊函数。
+
+
+
 
 
 ## onMessage
