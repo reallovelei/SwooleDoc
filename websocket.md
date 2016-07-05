@@ -80,6 +80,14 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 <font color=red>> $data 如果是文本类型，编码格式必然是UTF-8，这是WebSocket协议规定的</font>
 
 
+---
+
+#### opcode与数据类型
+* WEBSOCKET_OPCODE_TEXT = 0x1 ，文本数据
+* WEBSOCKET_OPCODE_BINARY = 0x2 ，二进制数据
+
+
+
 
 
 
