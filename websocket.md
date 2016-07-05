@@ -71,7 +71,7 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 | opcode | WebSocket的OpCode类型， |
 | finish | 表示数据帧是否完整，一个WebSocket请求可能会分成多个数据帧进行发送 |
 
-最常用的应该就是 $frame->fd 和 $frame->data
+最常用的应该就是 $frame->fd 和 $frame->data。
 
 
 说明：
