@@ -68,6 +68,6 @@
     * [9.8  swoole服务器如何做到无人值守100%可用](SwooleDaemon.md)
     * [9.8  MySQL的连接池、异步、断线重连](MysqlOperator.md)
     * [9.8  PHP中那些函数是同步阻塞的](SyncBlockFunction.md)
-    * [9.8  在php-fpm或apache中使用swoole](FpmApacheUse.md)
+    * [9.8  守护进程程序常用数据结构](DaemonDataStructure.md)
 * [10. 其他](c10.md)
 
