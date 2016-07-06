@@ -65,7 +65,7 @@
     * [9.8  Swoole异步与同步的选择](SwooleSyncAndAsync.md)
     * [9.8  TCP/UDP压测工具](TcpAndUdpBench.md)
     * [9.8  在php-fpm或apache中使用swoole](FpmApacheUse.md)
-    * [9.8  在php-fpm或apache中使用swoole](FpmApacheUse.md)
+    * [9.8  swoole服务器如何做到无人值守100%可用](SwooleDaemon.md)
     * [9.8  在php-fpm或apache中使用swoole](FpmApacheUse.md)
     * [9.8  在php-fpm或apache中使用swoole](FpmApacheUse.md)
     * [9.8  在php-fpm或apache中使用swoole](FpmApacheUse.md)
