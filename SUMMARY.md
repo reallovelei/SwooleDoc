@@ -69,5 +69,9 @@
     * [9.8  MySQL的连接池、异步、断线重连](MysqlOperator.md)
     * [9.8  PHP中那些函数是同步阻塞的](SyncBlockFunction.md)
     * [9.8  守护进程程序常用数据结构](DaemonDataStructure.md)
+    * [9.8  使用tcmalloc提升swoole内存分配性能](Tcmalloc.md)
+    * [9.8  守护进程程序常用数据结构](DaemonDataStructure.md)
+    * [9.8  守护进程程序常用数据结构](DaemonDataStructure.md)
+    * [9.8  守护进程程序常用数据结构](DaemonDataStructure.md)
 * [10. 其他](c10.md)
 
