@@ -60,7 +60,7 @@
     * [9.4  Worker进程](WorderProcess.md)
     * [9.5  Reactor、Worker、Task的关系](ReactorWorkerTask.md)
     * [9.6  Task/Finish特性的用途](TaskFinishSpecial.md)
-    * [9.2  Reactor线程](ReactorThread.md)
+    * [9.7  C/C++开发者如何使用Swoole](HowToUseSwoole.md)
     * [9.2  Reactor线程](ReactorThread.md)
 * [10. 其他](c10.md)
 
