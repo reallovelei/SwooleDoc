@@ -53,6 +53,7 @@
 * [6. Memory](c6.md)
 * [7. HttpServer](c7.md)
 * [8. WebSocket](websocket.md)
+   * 预定义常量
 * [9. 高级](c9md.md)
    * [9.1  swoole的实现](SwooleImplement.md)
    * [9.2  Reactor线程](ReactorThread.md)
