@@ -11,7 +11,7 @@
 
 通过使用$server->connection_info获取连接信息，返回的数组中有一项为 websocket_status，根据此状态可以判断是否为WebSocket客户端。
 ```php
-var_dump($server->connection_info($request->fd));
+var_dump($server->connection_info($fd));
 ```
 
 * WEBSOCKET_STATUS_CONNECTION = 1，连接进入等待握手
