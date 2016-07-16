@@ -28,6 +28,12 @@ Swoole 任何版本
  * 构造函数中的参数与swoole_server::addlistener中是完全相同的
 
 ## 代码样例
+```php
+//创建一个server，监听9560端口，多进程模式，提供TCP协议通讯服务
+$server = new swoole_server("0.0.0.0",9560,SWOOLE_PROCESS,SWOOLE_SOCK_TCP);
+$server->start();
+
+```
 
 ## 其它相关知识
  * 如果需要启用加密通讯请参考：[SSL启用]()
