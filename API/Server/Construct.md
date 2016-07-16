@@ -8,7 +8,7 @@ $serv = new swoole_server(string $host, int $port, int $mode = SWOOLE_PROCESS,
 ```
 
 ## 用途
-创建一个swoole server资源对象,通过这个对象能够创建一个Sever服务监听指定端口对外提供通讯服务
+创建一个swoole server资源对象.
 
 ## 适用范围及版本限制
 Swoole 任何版本
