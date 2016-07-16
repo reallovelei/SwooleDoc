@@ -110,4 +110,4 @@ function onMessage(swoole_websocket_server $server, swoole_websocket_frame $fram
 
 
 
-[点击查看](example/websocket)聊天室完整代码样例：
+[点击查看](/example/websocket)聊天室完整代码样例：
