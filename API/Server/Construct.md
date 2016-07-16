@@ -22,10 +22,14 @@ Swoole 任何版本
 |sock_type|Int|N|SWOOLE_SOCK_TCP|Socket类型支持：TCP/UDP、TCP6/UDP6、UnixSock Stream/Dgram 6种|
 
 ## 注意事项
- * 监听端口小于1024需要Root权限（不推荐）
- * 如果端口被占用server->start会失败
- * 1.7.11后才增加了对Unix Socket的支持
- * 构造函数中的参数与swoole_server::addlistener中是完全相同的
+ * 监听端口小于1024需要Root权限，不推荐使用低于1024端口
+ * 如果期望监听的端口被其它服务占用server->start会失败
+ * 1.7.11后增加了对Unix Socket的支持
+ * 构造函数中的参数与swoole_server::addlistener中是完全相同
+ * Swoole1.6版本之后PHP版本去掉了线程模式，原因是php的内存管理器在多线程下容易发生错误
+ * SWOOLE_BASE模式没有进程管理进程，如果使用了Process需要自行Kill
+ * 线程模式仅供C++中使用
+ * BASE模式在1.6.4版本之后也可是使用多进程，设置worker_num来启用
 
 ## 代码样例
 ```php
