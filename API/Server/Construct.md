@@ -21,7 +21,7 @@ $serv = new swoole_server(string $host, int $port, int $mode = SWOOLE_PROCESS,
 |mode|Int|N|SWOOLE_PROCESS|服务器运行模式，目前有三种运行模式|
 |sock_type|Int|N|SWOOLE_SOCK_TCP|Socket类型支持：TCP/UDP、TCP6/UDP6、UnixSock Stream/Dgram 6种|
 
-
+#### 注意事项
 > * 监听端口小于1024需要Root权限，不推荐使用低于1024端口
 > * 如果期望监听的端口被其它服务占用server->start会失败
 > * 1.7.11后增加了对Unix Socket的支持
