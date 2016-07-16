@@ -14,7 +14,8 @@ $serv = new swoole_server(string $host, int $port, int $mode = SWOOLE_PROCESS,
 Swoole 任何版本
 
 ## 参数
-^参数^类型^必填^默认值^用途及注意事项^
+| 参数 | 类型 | 必填 | 默认值 | 用途及注意事项 |
+|-----|-----|--|---|----------------------------:|
 |host|String|Y|无|服务器监听IP地址，适用0.0.0.0或0:0:0:0:0:0:0:0表示监听所有地址|
 |port|Int|Y|无|服务器监听端口，取值范围为1~65535|
 |mode|Int|N|SWOOLE_PROCESS(推荐)|服务器运行模式，目前有三种运行模式|
