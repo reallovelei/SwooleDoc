@@ -2,10 +2,10 @@
 
 ## 函数原型
 
-'''php
+```php
 $serv = new swoole_server(string $host, int $port, int $mode = SWOOLE_PROCESS,
     int $sock_type = SWOOLE_SOCK_TCP);
-'''
+```
 
 ## 用途
 创建一个swoole server资源对象,通过这个对象能够创建一个Sever服务监听指定端口对外提供通讯服务
