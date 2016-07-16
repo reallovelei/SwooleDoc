@@ -1,17 +1,17 @@
 # 构造函数
 
+## 用途
+创建一个swoole server资源对象.
+
+## 适用范围及版本限制
+Swoole 任何版本
+
 ## 函数原型
 
 ```php
 $serv = new swoole_server(string $host, int $port, int $mode = SWOOLE_PROCESS,
     int $sock_type = SWOOLE_SOCK_TCP);
 ```
-
-## 用途
-创建一个swoole server资源对象.
-
-## 适用范围及版本限制
-Swoole 任何版本
 
 ## 参数
 |参数|类型|必填|默认值|用途及注意事项|
