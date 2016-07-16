@@ -4,7 +4,8 @@
 创建一个swoole server资源对象.
 
 #### 适用范围及版本限制
-Swoole 任何版本
+ * Swoole 任何版本
+ * PHP-FPM内请勿使用
 
 #### 函数原型
 
