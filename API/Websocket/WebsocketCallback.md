@@ -29,7 +29,7 @@ function onHandShake(swoole_http_request $request, swoole_http_response $respons
 ```
 
 | 参数 | 描述 |
-| -- | -- |
+| :-- | :-- |
 | $request | swoole_websocket_server对象 |
 | $response | 是一个Http请求对象，包含了客户端发来的握手请求信息 |
 
