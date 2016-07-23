@@ -1,4 +1,4 @@
-# 设置服务器配置
+# 设置服务器配置 swoole_server->set
 
 #### 用途
 swoole_server->set函数用于设置swoole_server运行时的各项参数。服务器启动后通过$serv->setting来访问set函数设置的参数数组
