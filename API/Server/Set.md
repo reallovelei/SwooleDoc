@@ -17,6 +17,7 @@ function swoole_server->set(array $setting);
  * 多端口的时候set必须针对不同listner返回的对象进行设置
 
 #### 代码样例
+
 ```php
 //创建一个server，监听9560端口，多进程模式，提供TCP协议通讯服务
 $server = new swoole_server("0.0.0.0",9560,SWOOLE_PROCESS,SWOOLE_SOCK_TCP);
@@ -32,7 +33,6 @@ $server->set(
 $server->start();
 
 ```
-
 
 #### 参数说明
 
