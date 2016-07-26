@@ -90,6 +90,7 @@
         * [\_\_construct](API/Client/Construct.md) 
         * [connect](API/Client/Connect.md)
         * [send](API/Client/Send.md)
+        * [recv](API/Client/Recv.md)
 * [4. Process](API/Process.md)
 * [5. AsyncIO](API/AsyncIO.md)
 * [6. Memory](API/Memory.md)
