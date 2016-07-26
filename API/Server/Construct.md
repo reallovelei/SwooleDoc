@@ -1,4 +1,4 @@
-# 构造函数
+# 构造函数swoole_server::__construct
 
 #### 用途
 创建一个swoole server资源对象.
@@ -41,7 +41,8 @@ $server->start();
 ```
 
 #### 其它相关知识
- * 如果需要启用加密通讯请参考：[SSL启用]()
+ * 启用加密通讯请参考：[SSL启用]()
  * Unix Socket使用介绍：[Unix Socket支持]()
  * 高并发性能服务必须优化Linux内核：[Linux内核优化]()
  * mode属性介绍：[服务端三种运行模式介绍]()
+ * [通讯协议的设计及场景]()
