@@ -20,7 +20,8 @@ swoole_client->__construct(int $sock_type, int $is_sync = SWOOLE_SOCK_SYNC, stri
 
  #### 代码样例 
 ```php
-//使用同步阻塞 创建一个TCP的client$client = new swoole_client(SWOOLE_SOCK_TCP);$client->connect("192.168.1.38", 9501, 0);
+//使用同步阻塞 创建一个TCP的client
+$client = new swoole_client(SWOOLE_SOCK_TCP);$client->connect("192.168.1.38", 9501, 0);
 ``` 
 #### 注意事项 
 * 如果server启用了SSL加密，那么new client的时候 sock_type参数需要 | SWOOLE_SSL 来启用SSL加密。 
