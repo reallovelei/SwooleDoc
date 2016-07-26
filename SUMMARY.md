@@ -88,6 +88,7 @@
 * [3. Client](API/Client.md)
     * [3.1 函数列表](API/函数列表.md)
         * [\_\_construct](API/construct.md)
+        * [connect](API/connect.md)
 * [4. Process](API/Process.md)
 * [5. AsyncIO](API/AsyncIO.md)
 * [6. Memory](API/Memory.md)
