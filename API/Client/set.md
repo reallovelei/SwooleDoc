@@ -52,7 +52,18 @@ $client->set(
     )
 );
 ```
+>  包括socket底层操作系统缓存区、应用层接收数据内存缓存区、应用层发送数据内存缓冲区
 
+#### 示例4 关闭Nagle合并算法
+
+```php
+$client->set(
+    array( 
+        'open_tcp_nodelay' => true, 
+    )
+);
+
+```
 
 ```php
 
