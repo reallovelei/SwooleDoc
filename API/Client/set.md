@@ -44,6 +44,14 @@ $client->set(
 );
 
 ```
+#### 示例3 设置Socket缓存区尺寸
+```php
+$client->set(
+     array(
+        'socket_buffer_size'  => 1024*1024*2, //2M缓存区
+    )
+);
+```
 
 
 ```php
