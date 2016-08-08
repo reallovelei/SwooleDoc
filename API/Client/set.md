@@ -23,8 +23,8 @@ function swoole_client->set(array $setting);
 ```php
 $client->set(
     array( 
-        'open_eof_check' => true, 
-        'package_eof' => "\r\n\r\n", 
+        'open_eof_check'     => true, 
+        'package_eof'        => "\r\n\r\n", 
         'package_max_length' => 1024 * 1024 * 2, 
     )
 );
@@ -71,7 +71,7 @@ $client->set(
 $client->set(
      array(
         'ssl_cert_file' => $your_ssl_cert_file_path,
-        'ssl_key_file' => $your_ssl_key_file_path,
+        'ssl_key_file'  => $your_ssl_key_file_path,
      )
 );
 
@@ -79,20 +79,14 @@ $client->set(
 
 ```
 
-#### 示例4 关闭Nagle合并算法
-
-
+#### 示例6 绑定IP和端口
 
 ```php
-
 $client->set(
-
- array(
-
- 'open_tcp_nodelay' => true,
-
- )
-
+    array(
+        'bind_address' => '192.168.1.100',
+        'bind_port'    => 36002,
+    )
 );
 
 
