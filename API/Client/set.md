@@ -18,16 +18,32 @@ function swoole_client->set(array $setting);
 
 
 
-#### 注意事项
+#### 示例1 结束符检测
 
- * 此函数必须在server->start之前调用
+```php
+$client->set(
+    array( 
+        'open_eof_check' => true, 
+        'package_eof' => "\r\n\r\n", 
+        'package_max_length' => 1024 * 1024 * 2, 
+    )
+);
 
- * 多端口的时候set必须针对不同listner返回的对象进行设置
+```
 
+#### 示例2 长度检测
+```php
+$client->set(
+    array(
+        'open_length_check'      => 1,
+        'package_length_type'    => 'N',
+        'package_length_offset'  => 0,
+        'package_body_offset'    => 4,
+        'package_max_length'     => 2000000,
+    )
+);
 
-
-#### 代码样例
-
+```
 
 
 ```php
