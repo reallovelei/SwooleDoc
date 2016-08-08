@@ -1,4 +1,4 @@
-# 设置服务器配置 swoole_client->set
+# 设置客户端配置 swoole_client->set
 
 #### 用途
 swoole_client->set函数用于设置客户端参数，必须在connect前执行。swoole-1.7.17为客户端提供了类似swoole_server的自动协议处理功能。通过设置一个参数即可完成TCP的自动分包。
