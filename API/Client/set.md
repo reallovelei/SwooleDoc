@@ -64,6 +64,41 @@ $client->set(
 );
 
 ```
+#### 示例5 SSL/TLS证书     
+
+
+```php
+$client->set(
+     array(
+        'ssl_cert_file' => $your_ssl_cert_file_path,
+        'ssl_key_file' => $your_ssl_key_file_path,
+     )
+);
+
+
+
+```
+
+#### 示例4 关闭Nagle合并算法
+
+
+
+```php
+
+$client->set(
+
+ array(
+
+ 'open_tcp_nodelay' => true,
+
+ )
+
+);
+
+
+
+```
+
 
 ```php
 
