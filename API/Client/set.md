@@ -88,41 +88,12 @@ $client->set(
         'bind_port'    => 36002,
     )
 );
-
-
-
 ```
 
-
-```php
-
-//创建一个server，监听9560端口，多进程模式，提供TCP协议通讯服务
-
-$server = new swoole_server("0.0.0.0",9560,SWOOLE_PROCESS,SWOOLE_SOCK_TCP);
-
-//设置配置参数
-
-$server->set(
-
- array(
-
- 'reactor_num' => 2, //reactor thread num
-
- 'worker_num' => 4, //worker process num
-
- 'backlog' => 128, //listen backlog
-
- 'max_request' => 50,
-
- 'dispatch_mode' => 1,
-
-));
-
-$server->start();
+#### 使用说明 
 
 
 
-```
 
 
 
